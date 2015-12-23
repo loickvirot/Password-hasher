@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Password Hasher</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body>
+    <div class="panel panel-default main">
+      <div class="panel-body main-body">
+        <div class="page-header">
+          <h1>Generate your password</h1>
+        </div>
+        <div class="form">
+          <div class="form-group form-inline">
+            <input type="password" class="form-control" placeholder="First password" id="prefix">
+            <input type="password" class="form-control" placeholder="Second password" id="suffix">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Service name" id="service">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" id="button">Generate</button>
+          </div>
+        </div>
+        <br/>
+        <input type="text" class="form-control" id="hashContent" placeholder="Your result">
+
+        <div class="panel panel-info tuto">
+          <div class="panel-heading">How to use it ?</div>
+          <div class="panel-body">
+            <p>Choose and keep two unique passwords.</p>
+            <p>For generate a password, enter your passwords and the service name where the password will be used</p>
+            <p>Each time you need this password, go to this page generate it with same parameters.</p>
+          </div>
+        </div>
+        <div class="panel panel-info tuto">
+          <div class="panel-heading">How does it work ?</div>
+          <div class="panel-body">
+            <p>With your password and the service name, the script generate a crypted string (your two passwords are the "salt")</p>
+            <p>The script can't decrypt the generated password</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">Service created by <a href="http://loickvirot.fr"/>Loïck Virot</a> &copy; 2015 - 2016 | <a href="#"></a> </div>
+    </div>
+    <!-- jQuerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Crypto plugin -->
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Include jquery.base64.js -->
+    <script src="js/jquery.base64.js" type="text/javascript"></script>
+    <!-- Include trink8.js -->
+    <script src="js/jquery.base64.js" type="text/javascript"></script>
+    <!-- Include app.js -->
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

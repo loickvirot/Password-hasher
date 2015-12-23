@@ -1,0 +1,33 @@
+body
+{
+  background: #eaeaea;
+}
+
+.main
+{
+  width: 50%;
+  margin: 50px auto;
+}
+
+.main .main-body
+{
+  padding: 50px;
+}
+
+.form .form-inline
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form .form-control
+{
+  flex: 1;
+  margin: 0 2px;
+}
+
+.tuto
+{
+  margin-top: 50px;
+}
