@@ -5,7 +5,7 @@ $(document).ready(function()
 
   button.click(function()
   {
-    var hash = $.base64.btoa(CryptoJS.SHA256($("#prefix").val() + $("#service").val() + $("#suffix").val()))
+    var hash = $.base64.btoa(CryptoJS.SHA256($("#prefix").val() + $("#service").val().toLowerCase() + $("#suffix").val()))
     $("#hashContent").val(hash);
   });
   // Générer le hash avec les valeurs du formulaire
