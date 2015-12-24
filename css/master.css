@@ -14,7 +14,7 @@ body
   padding: 50px;
 }
 
-.form .form-inline
+.form .inline
 {
   display: flex;
   flex-direction: row;
@@ -30,4 +30,28 @@ body
 .tuto
 {
   margin-top: 50px;
+}
+
+.github-button
+{
+  float: right;
+}
+
+@media all and (max-width: 640px)
+{
+  .main
+  {
+    width: 100%;
+    margin: 0;
+  }
+
+  .form .inline
+  {
+    flex-direction: column;
+  }
+
+  .form .inline .form-control
+  {
+    margin: 2px;
+  }
 }
