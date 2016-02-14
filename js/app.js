@@ -3,7 +3,7 @@ function updateTitle(value){
 }
 
 $(document).ready(function(){
-  $('#lenght').val(0)
+  $('#lenght').val(16)
   updateTitle($('#lenght').val())
   var input = $("hashContent");
   var button = $( "button" );
