@@ -27,6 +27,11 @@ body
   margin: 0 2px;
 }
 
+.input-group .form-control
+{
+  margin: 0;
+}
+
 .tuto
 {
   margin-top: 50px;
