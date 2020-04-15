@@ -1,8 +1,0 @@
-{
-  "name": "password-hasher",
-  "version": "1.0.0",
-  "main": "main.js",
-  "devDependencies": {
-    "electron": "^1.4.1"
-  }
-}
