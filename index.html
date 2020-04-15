@@ -25,53 +25,54 @@
     <script src="js/app.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="card panel-default main">
-      <div class="panel-body main-body">
+    <div class="main container">
+      <div class="main-body">
         <div class="page-header">
           <h1>Password Hasher</h1>
           <p>Create a unique and strong password for each services you use.</p>
         </div>
-        <div class="form">
-          <div class="form-group inline">
-            <input type="password" class="form-control" placeholder="First password" id="prefix">
-            <input type="password" class="form-control" placeholder="Second password" id="suffix">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Service name" id="service">
-          </div>
-          <div class="input-group mb-3">
-            <input type="number" class="form-control" min="0" max="32" step="2" id="lenght" onchange="updateTitle($('#lenght').val())">
+        <form class="form">
+          <input type="password" class="form-control form-control-lg" placeholder="First password" id="prefix">
+          <input type="password" class="form-control form-control-lg" placeholder="Second password" id="suffix">
+          <input type="text" class="form-control form-control-lg" placeholder="Service name" id="service">
+          
+          <div class="input-group input-group-lg">
+            <input type="number" class="form-control" min="0" max="32" step="2" id="lenght">
             <div class="input-group-append">
               <span class="input-group-text">Characters</span>
             </div>
           </div>
-          <div class="form-group">
-            <button class="btn btn-primary" id="button">Generate</button>
-          </div>
+          <button class="btn btn-primary btn-lg btn-block" id="generateBtn">Generate</button>
         </div>
         <br/>
-        <input type="text" class="form-control" id="hashContent" placeholder="Your result">
-
-        <div class="card bg-light mb-3 mt-5">
-          <div class="card-header">How to use it ?</div>
-          <div class="card-body">
-            <p>Choose and keep two unique passwords.</p>
-            <p>To get a password for a chosen service , enter it's name and your two passwords.</p>
-            <p>Each time you need this password, go to this page generate it with same parameters.</p>
+        <div class="input-group input-group-lg mb-3">
+          <input type="text" class="form-control" id="hashContent" placeholder="Your result" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="copyBtn">Copy</button>
           </div>
         </div>
-        <div class="card bg-light mb-3 mt-3">
-          <div class="card-header">How does it work ?</div>
-          <div class="card-body">
-            <p>With your passwords and the service name, the script generate a crypted string (your two passwords are the "salt")</p>
-            <p>The script can't decrypt the generated password</p>
+        
+        <div class="infos mt-5">
+          <div class="card bg-light mb-3">
+            <div class="card-header">How to use it ?</div>
+            <div class="card-body">
+              <p>Choose and keep two unique passwords.</p>
+              <p>To get a password for a chosen service , enter it's name and your two passwords.</p>
+              <p>Each time you need this password, go to this page generate it with same parameters.</p>
+            </div>
+          </div>
+          <div class="card bg-light mb-3 mt-3">
+            <div class="card-header">How does it work ?</div>
+            <div class="card-body">
+              <p>With your passwords and the service name, the script generate a crypted string (your two passwords are the "salt")</p>
+              <p>The script can't decrypt the generated password</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card-footer">
+      <div class="footer">
         <p>Service created by <a href="http://loickvirot.fr"/>Loïck Virot</a> &copy; 2015<span id="currentYear"></span></p>
       </div>
     </div>
-  
   </body>
 </html>

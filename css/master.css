@@ -3,43 +3,32 @@ body
   background: #eaeaea;
 }
 
-.main
-{
-  max-width: 700px;
-  margin: auto;
+.form input,
+.form .input-group>.input-group-append>.input-group-text,
+.form .input-group>.form-control {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.main .main-body
-{
-  padding: 50px;
+.form {
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.form .inline
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.form .form-control
-{
+.form .btn {
   flex: 1;
-  margin: 0 2px;
+  border-radius: 0;
 }
 
-.input-group .form-control
-{
-  margin: 0;
+#hashContent {
+  background: #FFF;
 }
 
-.tuto
-{
-  margin-top: 50px;
-}
-
-.github-button
-{
-  float: right;
+#hashContent.hidePass {
+  color: #FFF;
 }
 
 @media all and (max-width: 640px)
