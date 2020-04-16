@@ -26,47 +26,47 @@
   </head>
   <body>
     <div class="main container">
-      <div class="main-body">
-        <div class="page-header">
-          <h1>Password Hasher</h1>
-          <p>Create a unique and strong password for each services you use.</p>
-        </div>
-        <form class="form">
-          <input type="password" class="form-control form-control-lg" placeholder="First password" id="prefix">
-          <input type="password" class="form-control form-control-lg" placeholder="Second password" id="suffix">
-          <input type="text" class="form-control form-control-lg" placeholder="Service name" id="service">
-          
-          <div class="input-group input-group-lg">
-            <input type="number" class="form-control" min="0" max="32" step="2" id="lenght">
-            <div class="input-group-append">
-              <span class="input-group-text">Characters</span>
-            </div>
+      <div class="page-header">
+        <h1>Password Hasher</h1>
+        <p>Create a unique and strong password for each services you use.</p>
+      </div>
+      <form class="form">
+        <input type="password" class="form-control form-control-lg" placeholder="First password" id="prefix">
+        <input type="password" class="form-control form-control-lg" placeholder="Second password" id="suffix">
+        <input type="text" class="form-control form-control-lg" placeholder="Service name" id="service">
+        
+        <div class="input-group input-group-lg">
+          <input type="number" class="form-control" min="0" max="32" step="2" id="lenght">
+          <div class="input-group-append">
+            <span class="input-group-text">Characters</span>
           </div>
-          <button class="btn btn-primary btn-lg btn-block" id="generateBtn">Generate</button>
         </div>
-        <br/>
-        <div class="input-group input-group-lg mb-3">
+        <button class="btn btn-primary btn-lg btn-block" id="generateBtn">Generate</button>
+      </form>
+      
+      <div class="card mt-5">
+        <div class="input-group input-group-lg">
           <input type="text" class="form-control" id="hashContent" placeholder="Your result" readonly>
           <div class="input-group-append">
             <button class="btn btn-secondary" type="button" id="copyBtn">Copy</button>
           </div>
         </div>
-        
-        <div class="infos mt-5">
-          <div class="card bg-light mb-3">
-            <div class="card-header">How to use it ?</div>
-            <div class="card-body">
-              <p>Choose and keep two unique passwords.</p>
-              <p>To get a password for a chosen service , enter it's name and your two passwords.</p>
-              <p>Each time you need this password, go to this page generate it with same parameters.</p>
-            </div>
-          </div>
-          <div class="card bg-light mb-3 mt-3">
-            <div class="card-header">How does it work ?</div>
-            <div class="card-body">
-              <p>With your passwords and the service name, the script generate a crypted string (your two passwords are the "salt")</p>
-              <p>The script can't decrypt the generated password</p>
-            </div>
+      </div>
+      
+      <div class="infos mt-5">
+        <div class="card bg-light mb-3">
+          <div class="card-body">
+            <h3>How to use it ?</h3>
+            <ul class="mb-4">
+              <li>Choose and keep two unique passwords.</li>
+              <li>To get a password for a chosen service , enter it's name and your two passwords.</li>
+              <li>Each time you need this password, go to this page generate it with same parameters.</li>
+              </li>
+            </ul>
+
+            <h3>How does it work ?</h3>
+            <p>With your passwords and the service name, the script generate a crypted string (your two passwords are the "salt")</p>
+            <p>The script can't decrypt the generated password</p>
           </div>
         </div>
       </div>
@@ -74,5 +74,14 @@
         <p>Service created by <a href="http://loickvirot.fr"/>Loïck Virot</a> &copy; 2015<span id="currentYear"></span></p>
       </div>
     </div>
+
+    <div class="toast-wrapper">
+      <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-delay="3000">
+        <div class="toast-body">
+          Copied!
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

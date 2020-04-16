@@ -41,6 +41,8 @@ $(document).ready(function(){
     el.readOnly = oldReadOnly;
 
     document.execCommand('copy');
+
+    $('.toast').toast('show')
   });
 });
 

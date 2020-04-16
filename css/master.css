@@ -1,6 +1,23 @@
 body
 {
-  background: #eaeaea;
+  background: #ebf5ff;
+}
+
+.card-body {
+  background: #FFF;
+}
+
+.page-header {
+  text-align: center;
+  margin: 48px auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+.main {
+  max-width: 700px;
 }
 
 .form input,
@@ -12,10 +29,12 @@ body
   border-right: none;
 }
 
-.form {
-  border: 1px solid #ced4da;
+.form,
+.card {
+  /* border: 1px solid #ced4da; */
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .form .btn {
@@ -25,27 +44,21 @@ body
 
 #hashContent {
   background: #FFF;
+  border: none;
 }
 
 #hashContent.hidePass {
   color: #FFF;
 }
 
-@media all and (max-width: 640px)
-{
-  .main
-  {
-    width: 100%;
-    margin: 0;
-  }
+.toast-wrapper {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  bottom: 20px;
+}
 
-  .form .inline
-  {
-    flex-direction: column;
-  }
-
-  .form .inline .form-control
-  {
-    margin: 2px;
-  }
+.toast-wrapper .toast {
+  margin: auto;
+  text-align: center;
 }
