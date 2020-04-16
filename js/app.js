@@ -16,7 +16,18 @@ $(document).ready(function(){
     if ($('#lenght').val() == 0) {
       hashContent.val(hash);
     } else {
-      $("#hashContent").val(hash.slice(0, $('#lenght').val()/2) + hash.slice(-$('#lenght').val()/2 ,hash.length));
+      hashContent.val(hash.slice(0, $('#lenght').val()/2) + hash.slice(-$('#lenght').val()/2 ,hash.length));
+
+      // If password not in viewport, scroll
+      var hashContentTop = hashContent.offset().top;
+      var hashContentBottom = hashContent.offset().top + hashContent.outerHeight();
+      var screenBottom = $(window).scrollTop() + $(window).innerHeight();
+      var screenTop = $(window).scrollTop();
+      if (!((screenBottom > hashContentTop) && (screenTop < hashContentBottom))) {
+        $([document.documentElement, document.body]).animate({
+          scrollTop: hashContent.offset().top - 30
+        }, 500);
+      }
     }
   });
 
