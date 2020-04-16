@@ -10,7 +10,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
     <!--favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <!-- Scripts -->
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
@@ -27,15 +27,16 @@
   <body>
     <div class="main container">
       <div class="page-header">
-        <h1>Password Hasher</h1>
+        <img src="img/icon.png" alt="Password hasher logo" class="main-logo mb-3">
+        <h3>Password Hasher</h1>
         <p>Create a unique and strong password for each services you use.</p>
       </div>
       <form class="form">
-        <input type="password" class="form-control form-control-lg" placeholder="First password" id="prefix">
-        <input type="password" class="form-control form-control-lg" placeholder="Second password" id="suffix">
-        <input type="text" class="form-control form-control-lg" placeholder="Service name" id="service">
+        <input type="password" class="form-control" placeholder="First password" id="prefix">
+        <input type="password" class="form-control" placeholder="Second password" id="suffix">
+        <input type="text" class="form-control" placeholder="Service name" id="service">
         
-        <div class="input-group input-group-lg">
+        <div class="input-group">
           <input type="number" class="form-control" min="0" max="32" step="2" id="lenght">
           <div class="input-group-append">
             <span class="input-group-text">Characters</span>
@@ -45,7 +46,7 @@
       </form>
       
       <div class="card mt-5">
-        <div class="input-group input-group-lg">
+        <div class="input-group">
           <input type="text" class="form-control" id="hashContent" placeholder="Your result" readonly>
           <div class="input-group-append">
             <button class="btn btn-secondary" type="button" id="copyBtn">Copy</button>
@@ -71,7 +72,11 @@
         </div>
       </div>
       <div class="footer">
-        <p>Service created by <a href="http://loickvirot.fr"/>Loïck Virot</a> &copy; 2015<span id="currentYear"></span></p>
+        <p>
+          Service created by <a href="http://loickvirot.fr"/>Loïck Virot</a> &copy; 2015<span id="currentYear"></span>
+          <br>
+          Icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </p>
       </div>
     </div>
 

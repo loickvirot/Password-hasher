@@ -1,6 +1,20 @@
+@font-face{
+  font-family: 'manrope';
+  src: url('fonts/Manrope-VariableFont_wght.ttf');
+}
+
 body
 {
-  background: #ebf5ff;
+  background: rgb(241, 255, 254);
+  font-family: 'manrope', 'arial' !important;
+}
+
+a {
+  color: #6aafaa;
+}
+
+.card {
+  border: none;
 }
 
 .card-body {
@@ -12,12 +26,20 @@ body
   margin: 48px auto;
 }
 
+.main-logo {
+  width: 64px;
+}
+
 .footer {
   text-align: center;
 }
 
 .main {
   max-width: 700px;
+}
+
+.form-control {
+  padding: 1.5rem !important;
 }
 
 .form input,
@@ -34,12 +56,25 @@ body
   /* border: 1px solid #ced4da; */
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form .btn {
   flex: 1;
   border-radius: 0;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus
+ {
+  background: #7BC9C4;
+  border: none;
+}
+
+.btn-primary:active {
+  background: #6aafaa !important;
+  border: none;
 }
 
 #hashContent {
@@ -61,4 +96,6 @@ body
 .toast-wrapper .toast {
   margin: auto;
   text-align: center;
+  background: #333;
+  color: #FFF;
 }
