@@ -52,8 +52,9 @@ $(document).ready(function(){
     el.readOnly = oldReadOnly;
 
     document.execCommand('copy');
+    hashContent.val('');
 
-    $('.toast').toast('show')
+    $('.toast').toast('show');
   });
 });
 
