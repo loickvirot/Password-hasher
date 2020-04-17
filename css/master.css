@@ -12,6 +12,9 @@ body
 a {
   color: #6aafaa;
 }
+a:hover {
+  color: #7BC9C4;
+}
 
 .card {
   border: none;
@@ -89,8 +92,8 @@ a {
 .toast-wrapper {
   position: fixed;
   width: 100%;
-  height: auto;
-  bottom: 20px;
+  height: 0px;
+  bottom: 70px;
 }
 
 .toast-wrapper .toast {
@@ -98,4 +101,20 @@ a {
   text-align: center;
   background: #333;
   color: #FFF;
+}
+
+.social-icons ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons ul li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.social-icons ul li svg {
+  width: 32px;
 }
