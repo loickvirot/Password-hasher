@@ -13,3 +13,4 @@ deploy:
   script: ssh -o StrictHostKeyChecking=no $SSH_USER_PROD@$SERVER_IP_PROD -p $SSH_PORT_PROD "cd $WEBROOT_PATH_PROD && git checkout master && git pull origin master && exit"
   on:
     branch: master
+    tags: true
