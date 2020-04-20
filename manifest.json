@@ -1,0 +1,22 @@
+{
+  "short_name": "Password Hasher",
+  "name": "Password Hasher",
+  "description": "Create a unique and strong password for each services you use.",
+  "icons": [
+    {
+      "src": "/img/logo/icon_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/img/logo/icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#7BC9C4",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}
