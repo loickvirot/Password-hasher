@@ -5,6 +5,7 @@ addons:
   - $SERVER_IP_PROD:$SSH_PORT_PROD
 
 before_deploy:
+  - openssl aes-256-cbc -K $encrypted_deploy_key -iv $encrypted_deploy_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
   - eval "$(ssh-agent -s)" # Start ssh-agent cache
   - chmod 600 .travis/id_rsa # Allow read access to the private key
   - ssh-add .travis/id_rsa # Add the private key to SSH
