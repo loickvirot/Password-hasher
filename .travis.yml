@@ -4,7 +4,7 @@ addons:
   ssh_known_hosts:
   - $SERVER_IP_PROD:$SSH_PORT_PROD
 
-before_script:
+before_deploy:
   - eval "$(ssh-agent -s)" # Start ssh-agent cache
   - chmod 600 .travis/id_rsa # Allow read access to the private key
   - ssh-add .travis/id_rsa # Add the private key to SSH
