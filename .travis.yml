@@ -7,6 +7,6 @@ addons:
 deploy:
   # deploy master to production
   - provider: script
-    script:  ssh $SSH_USER_PROD@SERVER_IP_PROD -p $SSH_PORT_PROD "cd $WEBROOT_PATH_PROD && git checkout master && git pull origin master && exit"
+    script:  ssh $SSH_USER_PROD@$SERVER_IP_PROD -p $SSH_PORT_PROD "cd $WEBROOT_PATH_PROD && git checkout master && git pull origin master && exit"
     on:
       branch: feature/init-ci-cd
