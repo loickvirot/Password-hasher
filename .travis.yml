@@ -3,6 +3,6 @@ language: minimal
 deploy:
   # deploy master to production
   - provider: script
-    script:  ssh $SECRET_KEY "cd var/www/ && git checkout master && git pull origin master && exit"
+    script:  ssh $SSH_DEPLOY_PROD "cd $WEBROOT_PATH_PROD && git checkout master && git pull origin master && exit"
     on:
       branch: feature/init-ci-cd
