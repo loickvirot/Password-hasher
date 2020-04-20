@@ -2,7 +2,7 @@ language: minimal
 
 addons:
   ssh_known_hosts:
-  - $SERVER_IP_PROD
+  - $SERVER_IP_PROD:$SSH_PORT_PROD
 
 deploy:
   # deploy master to production
