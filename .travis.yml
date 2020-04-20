@@ -1,3 +1,5 @@
+language: minimal
+
 deploy:
   # deploy master to production
   - provider: script
