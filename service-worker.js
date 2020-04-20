@@ -32,6 +32,7 @@ const PRECACHE_URLS = [
   '/img/logo/icon.svg',
   '/img/logo/icon_512.png',
   '/img/logo/icon_128.png',
+  '/img/logo/icon_128_mobile.png',
   '/img/favicon.ico',
 ];
 
