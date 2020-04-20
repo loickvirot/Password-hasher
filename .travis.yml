@@ -1,0 +1,6 @@
+deploy:
+  # deploy master to production
+  - provider: script
+    script:  ssh $SECRET_KEY "cd var/www/ && git checkout master && git pull origin master && exit"
+    on:
+      branch: feature/init-ci-cd
